@@ -435,8 +435,8 @@ public class C {
      }
     
     /**
-	   * Used by findCycles()
-	   */
+	 * Used by findCycles()
+	 */
     private void visit(int v, ArrayList<int[]> cycleEdges, List<List<Integer>> pruned){
       colored[v] = GREY;
       Integer u = pruned.get(v).get(0);
@@ -597,10 +597,10 @@ public class C {
     }
     
     /**
-	   * Compares two files, line by line.
-	   * Not use in main implementation,
-	   * only for testing purposes.
-	   */
+	 * Compares two files, line by line.
+	 * Not use in main implementation,
+	 * only for testing purposes.
+	 */
     public static void cmp(String myOP, String OP) throws IOException{
     		BufferedReader myOutput = 
     			new BufferedReader(new InputStreamReader(new FileInputStream(myOP)));
@@ -613,19 +613,19 @@ public class C {
         int inputs = 0;
 		
         while ((thisLine != null) || (thatLine != null)) {  
-					if(!thisLine.equals(thatLine)){
-						break;
-					}
-					thisLine = myOutput.readLine();
-					thatLine = Output.readLine();
+			if(!thisLine.equals(thatLine)){
+				break;
+			}
+			thisLine = myOutput.readLine();
+			thatLine = Output.readLine();
 
-					System.out.println(thisLine != null ? (inputs++ + 1) + "\t:\t" + thisLine : "");
-				}
-        
-				if(thisLine == null && thatLine == null){
-					System.out.println("Files Matched!");
-				}
-				else
-					System.out.println("Files Differed!");
+			System.out.println(thisLine != null ? (inputs++ + 1) + "\t:\t" + thisLine : "");
+		}
+
+		if(thisLine == null && thatLine == null){
+			System.out.println("Files Matched!");
+		}
+		else
+			System.out.println("Files Differed!");
     	}
 }
