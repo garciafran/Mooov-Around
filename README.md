@@ -18,6 +18,5 @@ Compilation instructions(Run as follows):
 General Comments:
 	
 	-This is an implementation on java
-	-Implemented as instructed on the handout for assingment 5.
 	 The program uses breadth first search to compute the distance from
 	  space j to students in the set of unsatisfied student.
